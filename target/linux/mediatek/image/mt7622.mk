@@ -197,3 +197,13 @@ define Device/ubnt_unifi-6-lr
   DEVICE_PACKAGES := kmod-mt7915e
 endef
 TARGET_DEVICES += ubnt_unifi-6-lr
+
+define Device/xwrt_wr3200k-v1
+  DEVICE_VENDOR := XWRT
+  DEVICE_MODEL := WR3200K V1
+  DEVICE_DTS := mt7622-xwrt-wr3200k-v1
+  DEVICE_DTS_DIR := ../dts
+  DEVICE_PACKAGES := kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-mt7615e kmod-mt7915e \
+	kmod-mt7615-firmware
+endef
+TARGET_DEVICES += xwrt_wr3200k-v1
